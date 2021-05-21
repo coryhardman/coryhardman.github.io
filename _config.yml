@@ -25,7 +25,7 @@ github_username:  coryhardman
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-modernist
+theme: modernist
 plugins:
   - jekyll-feed
 

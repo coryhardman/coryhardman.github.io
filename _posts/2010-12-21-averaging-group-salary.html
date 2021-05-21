@@ -1,0 +1,14 @@
+---
+layout: post
+title: Averaging A Group's Salary
+date: '2010-12-21T06:43:00.000-07:00'
+author: Cory Hardman
+tags:
+- Thoughts
+- Information Security
+modified_time: '2012-04-21T09:22:56.877-06:00'
+blogger_id: tag:blogger.com,1999:blog-880694922178002855.post-7331196865420483988
+blogger_orig_url: https://www.coryhardman.com/2010/12/averaging-group-salary.html
+---
+
+I recently wanted to find the average starting salary for some recent college graduates that had also worked at Surface Systems and Instruments. As most people know it is rude to ask what someone's salary is and can cause awkward situations. So I came up with the following algorithm to get a group of people's average salary without disclosing any information to anyone else, except for the average of course.<br/><br/>Person 1 comes up with a random number k. k should be much larger than person 1's salary. Person 1 should compute S1 + k, where S1 is person ones salary. Person 1 then tells person 2 and only person 2, S1 + k.<br/><br/>Person 2 takes S1 + k and adds S2 to it. Then gives person 3 S1 + k + S2.<br/><br/>Person 3 takes S1 + K + S2 and adds S3. Then gives it to person the next person.<br/><br/>On this goes till n people, where n is everyone we want the average salary of,  has added their salary to the running sum. The last person gives S1 + k + S2 + ... + Sn to person 1.<br/><br/>Person 1 subtracts k from S1 + k + S2 + ... + Sn and is left with S1 + S2 + ... + Sn. To compute the average, Person 1 simply takes (S1 + S2 + ... + Sn)/n and can then share it with everyone.<br/><br/>In order to make this secure, n must be grader than 2 and no person can give their sum to anyone else besides the next person in the line. Unfortunately, this does suffer from an attack. If person a and person a+2 want to know person a+1's salary, by subtracting the sum person a gave person a+1  from sum person a+1 gave person a+2.<br/><br/>So this is a fun method. My goal was to make it simple and practical to use. If you can find any other attacks please let me know.

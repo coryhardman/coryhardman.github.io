@@ -1,0 +1,14 @@
+---
+layout: post
+title: in_addr to string(char*)
+date: '2010-12-04T11:56:00.000-07:00'
+author: Cory Hardman
+tags:
+- Development
+- Help
+modified_time: '2012-04-21T09:22:56.824-06:00'
+blogger_id: tag:blogger.com,1999:blog-880694922178002855.post-5629183246059878667
+blogger_orig_url: https://www.coryhardman.com/2010/12/inaddr-to-stringchar.html
+---
+
+The other day I needed to turn a IPv4 address to a string in C. I figured some others would find it useful:<br/><br/><pre lang="c"><br/>char* hexToCharIP(struct in_addr addrIP)<br/>{<br/>  char* ip;<br/>  unsigned int intIP;<br/>  memcpy(&intIP, &addrIP,sizeof(unsigned int));<br/>  int a = (intIP >> 24) & 0xFF;<br/>  int b = (intIP >> 16) & 0xFF;<br/>  int c = (intIP >> 8) & 0xFF;<br/>  int d = intIP & 0xFF;<br/>  if((ip = (char*)malloc(16*sizeof(char))) == NULL)<br/>  {<br/>    return NULL;<br/>  }<br/>  sprintf(ip, "%d.%d.%d.%d", d,c,b,a);<br/>  return ip;<br/>}<br/></pre>

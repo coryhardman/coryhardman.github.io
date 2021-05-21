@@ -1,0 +1,13 @@
+---
+layout: post
+title: Fast Case Converter
+date: '2009-12-15T13:03:00.000-07:00'
+author: Cory Hardman
+tags:
+- Development
+modified_time: '2012-04-21T09:24:05.431-06:00'
+blogger_id: tag:blogger.com,1999:blog-880694922178002855.post-6752329187693154406
+blogger_orig_url: https://www.coryhardman.com/2009/12/fast-case-converter.html
+---
+
+Often I find myself needing to convert between upper case to lower case and vice versa. This is a fairly simple thing to do if you understand ASCII encoding. A good reference for the ASCII Table can be found <a href="http://www.asciitable.com/">here</a>. As you can see, to convert a letter to lower case you would add 32 to the current value and subtract 32 to convert it from lower to upper. However to implement this it takes a few lines of code to put some conditions in that check to see the current case and decide to add or subtract.<br/><br/>I was looking at the ASCII Table the other day and came up with a simplistic method to swap the case of a given character. That is to exclusively-or the value of the character with 0x20. This will convert the upper case to lower and the lower to upper. Its probably the fastest method to swap ,CPUs can xor in one cycle (excluding memory load time). However you still need some type of conditions to make sure the character is actually a letter and not a number of symbol.<br/><br/>Enjoy!

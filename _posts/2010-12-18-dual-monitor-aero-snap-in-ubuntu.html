@@ -1,0 +1,13 @@
+---
+layout: post
+title: Dual Monitor Aero Snap in Ubuntu
+date: '2010-12-18T12:14:00.000-07:00'
+author: Cory Hardman
+tags:
+- Help
+modified_time: '2012-04-21T09:22:56.772-06:00'
+blogger_id: tag:blogger.com,1999:blog-880694922178002855.post-3809516563559892593
+blogger_orig_url: https://www.coryhardman.com/2010/12/dual-monitor-aero-snap-in-ubuntu.html
+---
+
+I think the coolest thing about Windows 7 is Aero Snap. It really helps you get more efficient use of your screen real estate without you have to manually resize your windows. The good people at <a href="http://www.omgubuntu.co.uk/">OMG! Ubuntu</a> posted a great tutorial on how to <a href="http://www.omgubuntu.co.uk/2009/11/get-aero-snap-in-ubuntu/">get Aero Snap in Ubuntu</a>. I followed the tutorial and got my laptop snapping perfectly. I was not so lucky on my dual monitor desktop. So I have modified the script slightly to make it so it will now work on dual screen monitors. Most of this is exactly the same as the OMG! Ubuntu tutorial, so if you feel I didn't explain something clearly you should reference theirs.<br/><br/>Step 1 - Install Compiz Config<br/><pre lang="bash"><br/>sudo apt-get install compizconfig-settings-manager wmctrl<br/></pre><br/>Step 2 - Set up the commands<br/><ul><br/>	<li>Open the Compiz Config manager (System -&gt; preferences -&gt; CompizConfig Settings Manager)</li><br/>	<li>Select the "Commands" option</li><br/>	<li>In "Command Line 0" past:</li><br/></ul><br/><pre lang="bash"><br/>WIDTH=`xdpyinfo | grep 'dimensions:' | cut -f 2 -d ':' | cut -f 1 -d 'x'` && HALF=$(($WIDTH/4)) && wmctrl -r :ACTIVE: -b add,maximized_vert && wmctrl -r :ACTIVE: -e 0,0,0,$HALF,-1<br/></pre><br/><ul><br/>       <li>In "Command Line 1" past:</li><br/></ul><br/><pre lang="bash"><br/>WIDTH=`xdpyinfo | grep 'dimensions:' | cut -f 2 -d ':' | cut -f 1 -d 'x'` && HALF=$(($WIDTH/4)) && LOCATION=$(($WIDTH-$HALF)) && wmctrl -r :ACTIVE: -b add,maximized_vert && wmctrl -r :ACTIVE: -e 0,$LOCATION,0,$HALF,-1<br/></pre><br/><ul><br/>       <li>In "Command Line 2" past:</li><br/></ul><br/><pre lang="bash"><br/>wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz<br/></pre><br/><br/>Step 3 - Enable the commands<br/>Go to the 'Edge Bindings' tab and set the following:<br/><ul><br/>	<li>Run Command 0 - Set to Left</li><br/>	<li>Run Command 1 - Set to Right</li><br/>	<li>Run Command 2 - Set to Top</li><br/></ul><br/><br/>Good luck, let me know if you have any questions.

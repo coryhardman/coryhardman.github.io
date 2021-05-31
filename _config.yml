@@ -58,11 +58,8 @@ enforce_ssl: https://www.coryhardman.com/
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
 
-permalink: /:title/
+permalink: /:year/:month/:title:output_ext
 
 # The release of Jekyll Now that you're using
 version: v1.2.0

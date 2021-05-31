@@ -4,26 +4,13 @@ title: About
 permalink: /about/
 ---
 
-[Reverie](https://github.com/amitmerchant1990/reverie) is a Jekyll theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.amitmerchant.com).
+My name is Cory Hardman. I have spent my career in the cybersecurity space.
+I currently work at [Veritone](http://veritone.com). There I am leading two
+teams: 1) Creation of a numerious factor cognative single sign on platform and
+2) application security team responsible for making AiWARE the most secure
+platform to do AI based processing. 
 
-This is a plug-and-play Jekyll theme which you can use on GitHub Pages without even setting up a local environment.
-
-## Features
-
-- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
-- Fully responsive and mobile optimized base theme
-- Sass/Coffeescript support using Jekyll 2.0
-- Free hosting on your GitHub Pages user site
-- All the SEO goodies comes in-built
-- Markdown blogging
-- Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
-- Disqus commenting
-- Google Analytics integration
-- Fuzzy search across blog posts
-- Pagination of posts works out-of-the-box.
-- Categorize posts out-of-the box
-- RSS Feed
-- In-built sitemap
-
-Learn more about it [here](https://github.com/amitmerchant1990/reverie) on how to get started.
+I graduated from [Kansas State University](http://ksu.edu) with degrees in
+Computer Science and Mathematics in 2012. After college I went to work at
+Google in the Payments Platform team. I joined the Payments Security team in
+2013 and went onto lead it.  

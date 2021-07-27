@@ -1,21 +1,41 @@
 ---
 layout: post
-title: Passwords are great!
+title: Passwords are great...and suck!
 date: '2021-08-01'
 author: Cory Hardman
 tags: 
 modified_time: '2021-08-01'
 ---
 
-Passwords are nominally a something you know factor, however historically they have become the de facto authentication mechanism for most of the digital age. The de facto status has come because Passwords have a ton of great properties compared to other factors. Some benefits:
+I am working on a product called
+[Verify](https://www.veritone.com/veritone-verify/). One of its stated
+objectives is to kill the use of passwords. I believe that in order to replace
+something, you need to understand why it exists in the first place. In the case
+of passwords, where you the use and hatred is ubiquitous, there has to be
+a compelling reason for the ongoing use. So lets explore why passwords are
+great and talk about why ultimately they still suck and need to be replaced.
 
-* In theory, passwords are always with a person. They always know what they know
+Passwords are nominally a something you know factor of the three standard authentication factors (something you know, something you have, and something you are). Historically they have become the de facto authentication mechanism for most of the digital age. The de facto status has come because Passwords have a ton of great properties compared to the other factors. Such as:
+
+* In theory, passwords are always with a person. A user always knows what they know.
 * Don’t depend on physical attributes about a person that may change. People lose fingers, have grease fire incidents and scare their face, etc.
-* Don’t require extra hardware. All interactive devices a user use have a keyboard input mechanism of some sort
+* Don’t require extra hardware. Most interactive devices a keyboard input mechanism of some sort.
 * Revocable -- You can always change a password and say the old password is no longer valid if you believe it has been compromised
 * Easy to implement on just about every context from app on mobile device, website on desktop, to CLI. Requiring very little special software beyond bcrypt. 
+* Easily shared -- while not a great security property, users can and do share
+  passwords with each other. Look no further than Netflix account sharing where
+this is a feature.
+* Every digital user has used a password and thus user training is not
+  required. This is a key premise of [Troy Hunt's essay on Why [insert thing
+here] is not a password
+killer](https://www.troyhunt.com/heres-why-insert-thing-here-is-not-a-password-killer/). I think there is an often overlooked reason passwords are so widespread. Everything that attempts to replace them has a big lift around education of users.
+  * As an aside, I think the same effect is occuring with SMS OTP mechanisms.
+Users are seeing this form of authentication more and more and becoming
+aware of how it works and thus more companies implement this flow instead of
+some alternative "something you have" factor.
 
-So a lot of attacks have focused on the weaknesses that passwords represent and policies to deal with those attacks have been created. 
+As you can see, passwords have a lot of benefits and these are the reasons
+password use continues to endure.  
 
 Attacks:
 * Phishing -- Tricking users into typing their password into an attacker controlled website

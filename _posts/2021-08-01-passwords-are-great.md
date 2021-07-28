@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Passwords are great...and suck!
+title: Passwords are great...
 date: '2021-08-01'
 author: Cory Hardman
 tags: 

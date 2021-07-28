@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Passwords are great...and suck!
-date: '2021-08-01'
+title: Passwords are great...
+date: '2021-07-28'
 author: Cory Hardman
 tags: 
-modified_time: '2021-08-01'
+modified_time: '2021-07-28'
 ---
 
 I am working on a product called

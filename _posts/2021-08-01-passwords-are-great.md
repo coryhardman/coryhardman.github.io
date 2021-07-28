@@ -13,13 +13,13 @@ objectives is to kill the use of passwords. I believe that in order to replace
 something, you need to understand why it exists in the first place. In the case
 of passwords, where you the use and hatred is ubiquitous, there has to be
 a compelling reason for the ongoing use. So lets explore why passwords are
-great and talk about why ultimately they still suck and need to be replaced.
+great.
 
 Passwords are nominally a `something you know factor` of the three standard 
 authentication factors (1 - `something you know`, 2 - `something you have`, and 3 - `something 
-you are`). Historically passwords have become the de facto authentication mechanism 
+you are`). Passwords have become the de facto authentication mechanism 
 for most of the digital age. The de facto status has come because Passwords 
-have a ton of great properties compared to the other factors. Such as:
+have a ton of great properties compared to the other factors: 
 
 * Passwords are always with a person. A user always knows what they know.
 * Don’t depend on physical attributes about a person that may change. People lose fingers, have grease fire incidents and scare their face, etc.
@@ -39,8 +39,10 @@ have a ton of great properties compared to the other factors. Such as:
       some alternative "something you have" factor.
 
 As you can see, passwords have a lot of benefits and these are the reasons
-password use continues to endure. In a follow up, I'm going to write about why
-passwords suck. In particular about the attacks and the unfortunate policies
-that have been created to attempt to compact those attacks -- ultimately why
-those policies are failing users and companies that rely on passwords still.
+password use continues to endure. Any product that attempts to unseat passwords
+will need to provide compelling alternatives to each of these points. In a 
+follow up, I'm going to write about why passwords suck. In particular about 
+the attacks and the unfortunate policies that have been created in an effort to 
+combat those attacks -- ultimately why those policies are failing users and 
+companies that rely on passwords still.
 

@@ -4,7 +4,7 @@ title: Passwords are great...
 date: '2021-07-28'
 author: Cory Hardman
 tags: 
-modified_time: '2021-07-28'
+modified_time: '2021-07-30'
 ---
 
 I am working on a product called
@@ -37,6 +37,8 @@ have a ton of great properties compared to the other factors:
       Users are seeing this form of authentication more and more and becoming
       aware of how it works and thus more companies implement this flow instead of
       some alternative "something you have" factor.
+* (Added 2021-07-30 per feedback from [Hancheng
+    Zhong](https://www.linkedin.com/in/hczhong/)) In the US, currently passwords are protected from the government forcing disclosure by the [Fifth Amendment of the US Constitution](https://constitution.congress.gov/constitution/amendment-5/). This makes passwords the only authentication factor that can not be taken by the government in a criminal investigation. 
 
 As you can see, passwords have a lot of benefits and these are the reasons
 password use continues to endure. Any product that attempts to unseat passwords

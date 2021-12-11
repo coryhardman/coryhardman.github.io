@@ -4,21 +4,21 @@ title: Tech debt is the wrong model
 date: '2021-12-09'
 author: Cory Hardman
 tags: 
-modified_time: '2021-12-09'
+modified_time: '2021-12-10'
 ---
 
-I think tech debt is the wrong mental model to describe software issues or deficits. In fact, it is dangerous mental model because it gives the wrong impression: you can pay it down by writing a check. The alternative that I encourage everyone to adopt: Software systems are a forward progression and every previous iteration was optimized for the constants on them. Therefore, nothing is debt but instead a change that would improve the software system in a different dimension than has been previously prioritized. 
+I think tech debt is the wrong mental model to describe software issues or deficits. In fact, it is dangerous mental model because it gives the wrong impression: you can pay it down by writing a check. The alternative that I encourage everyone to adopt: Software systems are a forward progression and every previous iteration was optimized for the constraint on them. Therefore, nothing is debt but instead a change that would improve the software system in a different dimension than has been previously prioritized. 
 
-To back up and work up to this better mental model. I roughly believe all software written is  optimized for the exact constants imposed on the engineers who wrote it. Constants like:
+To back up and work up to this better mental model. I roughly believe all software written is  optimized for the exact constraint imposed on the engineers who wrote it. constraint like:
 
 * Amount of time wanting to be spent on it (aka the need to ship). Note, time wanting to be spent is not only management or client demands. It can also come from engineers wanting to move onto the next project, get the promo, etc. Also note willingness to spend more time decreases as things get "good enough"
 * Desired features. Both explicitly requested and the imaged desires of consumers of the software system.
 * Reliability objectives. Such as SLA of uptime, confidence in builds ability to go to production, etc
 * Willingness to spend human cycles vs machine cycles to do things. For example automated database schema changes vs hiring a DB Admin to manual make the changes. Think of automation as an upfront cost whereas human manual effort as a marginal cost. 
 
-Most of the time the constants are not well defined ahead of time. They are discovered over the course of writing the software and the interactions between all interested parties. For example: it may be initially desirable that the system has a push on green deployment paradigm, but as shipping date approaches it is a trade off to ship with a more manual push paradigm. Similarly: engineering thinks a feature, while not requested explicitly, should be implemented and thus it ships with the product. 
+Most of the time the constraint are not well defined ahead of time. They are discovered over the course of writing the software and the interactions between all interested parties. For example: it may be initially desirable that the system has a push on green deployment paradigm, but as shipping date approaches it is a trade off to ship with a more manual push paradigm. Similarly: engineering thinks a feature, while not requested explicitly, should be implemented and thus it ships with the product. 
 
-This means that all interested parties are using roughly a greedy algorithm to find the optimized for the given constants to "finish" the software system and once the software ships it has been reached. Trade offs were made: product wanted internationalization, engineering wanted load testing and push on green deployments, etc but in the end the software system was considered good enough by all voting parties and thus optimized for the constants.
+This means that all interested parties are using roughly a greedy algorithm to find the optimized for the given constraint to "finish" the software system and once the software ships it has been reached. Trade offs were made: product wanted internationalization, engineering wanted load testing and push on green deployments, etc but in the end the software system was considered good enough by all voting parties and thus optimized for the constraint.
 
 At this point: one would call the lack of load testing, push on green and internationalization as tech debt. But is it? Debt is something that you have to pay off. Perhaps it turns out the product is not straining under the load and the market fit isn't demanding support for more languages. Turns out: these were imaged desired features or reliability objectives and not things that were critical to the product.
 

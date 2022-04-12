@@ -224,7 +224,7 @@ GEM
     minitest (5.14.4)
     multi_json (1.10.1)
     multipart-post (2.1.1)
-    nokogiri (1.12.5-x86_64-linux)
+    nokogiri (1.13.4-x86_64-linux)
       racc (~> 1.4)
     octokit (4.21.0)
       faraday (>= 0.9)

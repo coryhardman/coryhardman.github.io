@@ -14,7 +14,7 @@ GEM
     coffee-script-source (1.11.1)
     colorator (1.1.0)
     commonmarker (0.23.8)
-    concurrent-ruby (1.2.0)
+    concurrent-ruby (1.2.2)
     configliere (0.4.22)
       highline (= 1.5.2)
       multi_json (~> 1.10.1)
@@ -250,7 +250,7 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2022.7)
+    tzinfo-data (1.2023.3)
       tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext

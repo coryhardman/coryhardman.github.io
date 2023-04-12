@@ -13,7 +13,7 @@ GEM
       execjs
     coffee-script-source (1.11.1)
     colorator (1.1.0)
-    commonmarker (0.23.8)
+    commonmarker (0.23.9)
     concurrent-ruby (1.2.2)
     configliere (0.4.22)
       highline (= 1.5.2)
